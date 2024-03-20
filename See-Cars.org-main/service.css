@@ -1,10 +1,7 @@
 
 :root {
 
-    /**
      * colors
-     */
-  
     --international-orange-engineering: hsl(1, 91%, 37%);
     --cadet-blue-creyola: hsl(222, 14%, 69%);
     --oxford-blue-1: hsl(222, 47%, 15%);
@@ -16,21 +13,17 @@
     --eerie-black: hsl(0, 25%, 94%);
     --light-gray: hsl(0, 0%, 80%);
     --white: hsl(0, 3%, 7%);
-  
     /**
      * typography
      */
-  
     --ff-chakra-petch: 'Chakra Petch', sans-serif;
     --ff-mulish: 'Mulish', sans-serif;
-    
     --fs-1: 3.5rem;
     --fs-2: 3rem;
     --fs-3: 2.4rem;
     --fs-4: 1.8rem;
     --fs-5: 1.4rem;
     --fs-6: 1.2rem;
-    
     --fw-400: 400;
     --fw-600: 600;
     --fw-700: 700;
@@ -62,11 +55,7 @@
     --cubic-out: cubic-bezier(0.05, 0.83, 0.52, 0.97);
   
   }
-  
-  
-  
-  
-  
+
   /*-----------------------------------*\
     #RESET
   \*-----------------------------------*/
@@ -80,12 +69,10 @@
   }
   
   li { list-style: none; }
-  
   a,
   img,
   span,
   button { display: block; }
-  
   a {
     color: inherit;
     text-decoration: none;
@@ -124,8 +111,6 @@
   ::-webkit-scrollbar-thumb { background-color: hsl(0, 0%, 80%); }
   
   ::-webkit-scrollbar-thumb:hover { background-color: hsl(0, 0%, 70%); }
-  
-  
   
   
   
@@ -293,8 +278,6 @@
   
   
   
-  
-  
   /*-----------------------------------*\
     #HEADER
   \*-----------------------------------*/
@@ -373,8 +356,6 @@
   }
   
   
-  
-  
   /*-----------------------------------*\
     #HERO
   \*-----------------------------------*/
@@ -410,10 +391,7 @@
     width: 90%;
     z-index: -1;
   }
-  
-  
-  
-  
+ 
   
   /*-----------------------------------*\
     #SERVICE
@@ -440,9 +418,6 @@
   }
   
   .service .btn { margin-inline: auto; }
-  
-  
-  
   
   
   /*-----------------------------------*\
@@ -487,9 +462,6 @@
   }
   
   
-  
-  
-  
   /*-----------------------------------*\
     #WORK
   \*-----------------------------------*/
@@ -532,8 +504,6 @@
     place-items: center;
     border-radius: var(--radius-circle);
   }
-  
-  
   
   
   
@@ -610,8 +580,6 @@
   
   
   
-  
-  
   /*-----------------------------------*\
     #MEDIA QUERIES
   \*-----------------------------------*/
@@ -638,8 +606,6 @@
   
     }
   
-  
-  
     /**
      * REUSED STYLE
      */
@@ -653,7 +619,6 @@
     .section-subtitle { --fs-5: 1.6rem; }
   
     .h2 { font-weight: var(--fw-700); }
-  
   
   
     /**
@@ -670,7 +635,6 @@
     .hero .section-text { font-size: 1.8rem; }
   
   
-  
     /**
      * SERVICE
      */
@@ -685,7 +649,6 @@
     }
   
     
-  
     /**
      * ABOUT
      */
@@ -697,15 +660,11 @@
   
     .about-item { padding-block: 20px; }
   
-  
-  
     /**
      * WORK
      */
   
     .scrollbar-item { min-width: calc(50% - 15px); }
-  
-  
   
     /**
      * FOOTER
@@ -726,9 +685,6 @@
     }
   
   }
-  
-  
-  
   
   
   /**
@@ -753,7 +709,7 @@
   
     }
   
-  
+
   
     /**
      * REUSED STYLE
@@ -771,8 +727,6 @@
       margin-inline: auto;
     }
   
-  
-  
     /**
      * HERO
      */
@@ -780,8 +734,6 @@
     .hero { --section-padding: 120px; }
   
     .hero .section-text { margin-block-end: 30px; }
-  
-  
   
     /**
      * SERVICE
@@ -803,8 +755,7 @@
       transform-origin: top;
     }
   
-  
-  
+
     /**
      * ABOUT
      */
@@ -815,9 +766,7 @@
     .about .section-text { margin-inline: auto; }
   
     .about .section-text { max-width: 520px; }
-  
-  
-  
+
     /**
      * FOOTER
      */
@@ -827,10 +776,6 @@
     .copyright { --fs-6: 1.4rem; }
   
   }
-  
-  
-  
-  
   
   /**
    * responsive for large than 992px screen
@@ -917,8 +862,6 @@
       font-size: var(--fs-5);
     }
   
-  
-  
     /**
      * HERO
      */
@@ -938,7 +881,6 @@
     .hero .section-title { text-align: left; }
   
     .hero-banner img { width: 55%; }
-  
   
   
     /**
@@ -962,8 +904,6 @@
       margin-block-start: -30%;
       width: 210%;
     }
-  
-  
   
     /**
      * ABOUT
@@ -1017,9 +957,7 @@
   
   }
   
-  
-  
-  
+
   
   /**
    * responsive for large than 1200px screen
@@ -1041,9 +979,6 @@
       --fs-3: 4.6rem;
   
     }
-  
-  
-  
     /**
      * REUSED STYLE
      */
@@ -1054,8 +989,6 @@
     .btn { padding: 18px 36px; }
   
     .btn .material-symbols-rounded { --fs: 1.3em; }
-  
-  
   
     /**
      * HEADER
@@ -1069,8 +1002,6 @@
       font-size: unset;
       padding-block: 15px;
     }
-  
-  
   
     /**
      * HERO
@@ -1086,8 +1017,6 @@
     }
   
     .hero-banner img { width: 70%; }
-  
-  
   
     /**
      * SERVICE
@@ -1118,8 +1047,6 @@
       left: -41%;
     }
   
-  
-  
     /**
      * WORK
      */
@@ -1129,8 +1056,6 @@
       width: 55px;
       height: 55px;
     }
-  
-  
   
     /**
      * FOOTER
@@ -1161,10 +1086,7 @@
   
   }
   
-  
-  
-  
-  
+
   /**
    * responsive for large than 1400px screen
    */
@@ -1190,9 +1112,7 @@
       --section-padding: 140px;
   
     }
-  
-  
-  
+
     /**
      * REUSED STYLE
      */
@@ -1203,16 +1123,12 @@
       height: 20px;
       margin-inline-end: 5px;
     }
-  
-  
-  
+
     /**
      * HEADER
      */
   
     .header .btn { padding: 18px 36px; }
-  
-  
   
     /**
      * HERO
@@ -1224,8 +1140,6 @@
   
     .hero-banner img { width: 75%; }
   
-  
-  
     /**
      * ABOUT
      */
@@ -1233,8 +1147,6 @@
     .about::before { width: 55%; }
   
     .about-banner .w-100 { width: 50%; }
-  
-  
   
     /**
      * FOOTER
