@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maclaren Animated Landing Page</title>
+    <!-- CSS File  -->
+    <link rel="stylesheet" href="cars.css">
+    <link rel="stylesheet" href="prod.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <!-- Bootstrap Icons  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+<body>
+    <video autoplay loop muted>
+        <source src="Maclaren.mp4">
+    </video>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">wonder cars</a>
+            <ul>
+                <li><a href="car.html">Home</a></li>
+                <li><a href="service.html">Services</a></li>
+                
+                <li><a href="contact.html">contact</a></li>
+                <li><a href="carlogin.html">login</a></li>
+                <li><a href="#" onclick="toggleCarProducts()">Products</a></li>
+                <li><a href="carlogin.html">login</a></li>
+               
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="page-content">
+            <div class="inner-content">
+                <h1 class="heading">Maclaren</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ullam, aliquid in vel quo eius possimus magni quibusdam ex perferendis, natus suscipit voluptas, debitis unde vitae omnis saepe ratione ea?</p>
+                <div class="buttons">
+                    <a href="#" class="active">Learn more</a>
+                    <a href="#">Browse</a>
+                </div>
+
+                <div class="social-links">
+                    <a href="#" class="bi bi-facebook"></a>
+                    <a href="#" class="bi bi-youtube"></a>
+                    <a href="#" class="bi bi-instagram"></a>
+                    <a href="#" class="bi bi-linkedin"></a>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Car Products Section -->
+    <div class="car-products">
+        <h2>The Showroom</h2>
+        <div class="products">
+            <div class="product">
+                <img src="car1.jpeg" alt="Car 1">
+                <h3>Rolls Royce</h3>
+                <p>Rolls-Royce Dawn</p>
+            </div>
+            <div class="product">
+                <img src="car2.webp" alt="Car 2">
+                <h3>Lamborghini</h3>
+                <p>Aventadour</p>
+            </div>
+            <div class="product">
+                <img src="CAR3.jpg" alt="Car 3">
+                <h3>BMW</h3>
+                <p>The New X5</p>
+            </div>
+            <div class="product">
+                <img src="car4.avif" alt="Car 2">
+                <h3>Mercedes</h3>
+                <p>Mercedes Benz India</p>
+            </div>
+            <div class="product">
+                <img src="car5.avif" alt="Car 5">
+                <h3>Porsche</h3>
+                <p>Porsche 911 Tourbo</p>
+            </div>
+            <div class="product">
+                <img src="car6.jpg" alt="Car 6">
+                <h3>Audi</h3>
+                <p>Audi R8</p>
+            </div>
+            <div class="product">
+                <img src="car7.webp" alt="Car 7">
+                <h3>Range Rover</h3>
+                <p>Range Rover Velar</p>
+            </div>
+            <div class="product">
+                <img src="car8.avif" alt="Car 8">
+                <h3>G-Wagen</h3>
+                <p>Mercedes G-Wagen</p>
+            </div>
+            <div class="product">
+                <img src="car9.jpg" alt="Car 9">
+                <h3>MG One</h3>
+                <p>MG One SUV Ind</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleCarProducts() {
+            var carProducts = document.querySelector('.car-products');
+            carProducts.style.display = (carProducts.style.display === 'none' || carProducts.style.display === '') ? 'block' : 'none';
+        }
+    
+     
+        document.body.addEventListener('click', function(event) {
+            var carProducts = document.querySelector('.car-products');
+            var productsLink = document.querySelector('a[href="#"][onclick="toggleCarProducts()"]');
+            if (!carProducts.contains(event.target) && event.target !== productsLink) {
+                carProducts.style.display = 'none';
+            }
+        });
+    </script> 
+    
+</body>
+</html>
