@@ -161,3 +161,119 @@ video {
 .page-content .social-links a:hover::after { 
     height: 100%;
 }
+
+/* -------------------------------
+   📱 Mobile Responsive Styling
+   ------------------------------- */
+@media (max-width: 768px) {
+  /* Navbar mobile layout */
+  .navbar .container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+    padding-left: 0;
+  }
+
+  .navbar ul a {
+    padding: 10px 15px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 6px;
+    text-align: left;
+  }
+
+  /* Heading + content */
+  .page-content {
+    margin-top: 4rem;
+    padding: 0 20px;
+  }
+
+  .page-content .inner-content .heading {
+    font-size: 2.8rem;
+    line-height: 1.2;
+  }
+
+  .page-content .inner-content p {
+    font-size: 15px;
+    margin-top: 1rem;
+    line-height: 1.5;
+  }
+
+  .page-content .buttons {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .page-content .buttons a {
+    width: 80%;
+    max-width: 260px;
+    font-size: 14px;
+    padding: 12px;
+    margin: 8px 0;
+  }
+
+  /* Social icons */
+  .page-content .social-links {
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .page-content .social-links a {
+    width: 36px;
+    height: 36px;
+  }
+
+  /* Video optimization */
+  video {
+    height: 220px;
+    object-fit: cover;
+  }
+
+  /* Products section */
+  .car-products {
+    padding: 20px;
+  }
+
+  .car-products h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+
+  .products {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .product {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .product h3 {
+    font-size: 18px;
+    margin: 10px 0 4px;
+    text-align: center;
+  }
+
+  .product p {
+    font-size: 14px;
+    text-align: center;
+  }
+}
